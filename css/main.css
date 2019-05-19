@@ -1,3 +1,275 @@
 *{
-	box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.ba-container{
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+/*------------------------------------------------------------------------------------HEADER-------------------------------*/
+.ba-header{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 30px;
+}
+
+.ba-header .ba-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	margin:0;
+}
+
+.logo-link{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 33px;
+}
+
+.menu{
+	display: flex;
+	list-style: none;
+}
+
+.menu-item + .menu-item{
+	margin-left: 30px;
+}
+
+.menu_link{
+	position: relative;
+	font-size: 19px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.menu_link:hover,
+.menu_link:focus{
+	color:#e71cb4;
+}
+
+.menu_link:after{
+	content: "";
+	position: absolute;
+	left:0;
+	bottom: 0;
+	transform: translateX(-100%);
+	width: 100%;
+	height:1px;
+	display: inline-block;
+	background-color: #e71cb4;
+	transition: height .5s, transform 1.5s;
+	transition-timing-function: cubic-bezier(0.42, 0, 0, 1.12), cubic-bezier(0.42, 0, 0, 1.12);
+}
+
+.menu-item{
+	overflow: hidden;
+}
+
+.menu_link:hover:after,
+.menu_link:focus:after{
+	transform: translateX(0);
+	height: 3px;
+}
+
+.ba-hero{
+	background-image: url(../images/bg-header.png);
+	background-color: #000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.ba-hero_title{
+	font-size: 60px;
+}
+
+.ba-hero_text{
+	font-size: 30px;
+	margin-bottom: 2.16em;
+}
+
+.ba-hero_btn{
+	border: 2px solid white;;
+	border-radius: 10px;
+	height:54px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	padding:  0 1.25em;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ba-hero_btn:hover,
+.ba-hero_btn:focus{
+	background-color: white;
+	color:black;
+}
+/*-----------------------------------------------------------------------------------------DESIGN BATTLES----------------------*/
+.ba-battless-headline{
+	color:#e71cb4 ;
+	font-size: 62px;
+	font-weight: bold;
+	margin:150px 0 120px 0;	
+}
+
+.ba-battles-text{
+	font-size: 32px;
+	margin: 0 0 150px 0;
+}
+
+.ba-battless-headline-smaller{
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0 0 100px 0;
+}
+
+.ba-course-list{
+	list-style: none;
+	column-count: 2;
+	margin: 0;
+}
+
+.ba-course-list li:before {
+	content: ">"; /* Добавляем в качестве маркера символ */
+	font-size: 44px; 
+}
+
+.marker{
+	font-size: 44px;
+	margin-left: 60px;
+	margin-right: 40px;
+	font-weight: 600;
+}
+
+.ba-course_item:nth-child(1){
+	color:#ffde16 ;
+}
+.ba-course_item:nth-child(2){
+	color: #ffbd9e;
+}
+.ba-course_item:nth-child(3){
+	color:#20c9e0 ;
+}
+.ba-course_item:nth-child(4){
+	color: #2eac66;
+}
+.ba-course_item:nth-child(5){
+	color: #ff6179;
+}
+.ba-course_item:nth-child(6){
+	color:#ffde16 ;
+}
+
+.ba-course_item{
+	margin: 0 0 90px 0;	
+}
+
+.ba-item-text{
+	color: #000;
+	font-size: 24px;
+	/*---------------------!!!!!!!!!!!!!!!!ДОБАВИТЬ СЮДА ЭТО ЕБУЧЕЕ ВЫРАВНИВАНИЕ!!!!!!!!!!!!!!!------------------*/
+}
+
+.ba-battles-text-small{
+	font-size: 22px;
+	margin: 0 0 100px 0;
+}
+
+.ba-headline-smalest{
+	font-size: 30px;
+	margin: 0 0 50px 0;
+}
+
+.ba-battles-comment{
+	font-size: 14px;
+	margin: 0 0 50px 0;	
+}
+
+.ba-btn-download{
+	font-size: 22px;
+	color: white;
+	background-color: #c60ebe;
+	border: 1px solid #c60ebe;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 0.2em 1.7em;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 115px 0;
+}
+
+.ba-btn-download:hover{
+	color:#c60ebe;;
+	background-color: #fff;
+	border: 1px solid #fff;
+	border: 1px solid #c60ebe;
+}
+
+/*------------------------------------------------------------------------------------------ANIMATIONS-------------------------*/
+
+a,
+input[type=“submit”],
+input[type=“button”],
+button{
+    -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type=“submit”],
+input[type=“button”],
+button,
+.ba-button{
+    display: inline-block;
+}
+input[type=“submit”]:hover,
+input[type=“button”]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type=“text”],
+input[type=“email”],
+input[type=“password”],
+input[type=“number”],
+input[type=“tel”],
+textarea,
+select {
+
+    -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type=“text”]:focus,
+input[type=“email”]:focus,
+input[type=“password”]:focus,
+input[type=“number”]:focus,
+input[type=“tel”]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
 }
