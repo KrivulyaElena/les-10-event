@@ -153,11 +153,24 @@ body{
 	font-size: 44px; 
 }
 
+.ba-course_item{
+	margin: 0 0 90px 0;
+	position: relative;
+}
+
 .marker{
 	font-size: 44px;
 	margin-left: 60px;
 	margin-right: 40px;
-	font-weight: 600;
+	font-weight: 600;		
+}
+
+.ba-item-text{
+	color: #000;
+	font-size: 20px;
+	position: absolute;
+	width: 340px;
+	top:10px;
 }
 
 .ba-course_item:nth-child(1){
@@ -177,16 +190,6 @@ body{
 }
 .ba-course_item:nth-child(6){
 	color:#ffde16 ;
-}
-
-.ba-course_item{
-	margin: 0 0 90px 0;	
-}
-
-.ba-item-text{
-	color: #000;
-	font-size: 24px;
-	/*---------------------!!!!!!!!!!!!!!!!ДОБАВИТЬ СЮДА ЭТО ЕБУЧЕЕ ВЫРАВНИВАНИЕ!!!!!!!!!!!!!!!------------------*/
 }
 
 .ba-battles-text-small{
@@ -224,6 +227,95 @@ body{
 	border: 1px solid #fff;
 	border: 1px solid #c60ebe;
 }
+
+/*-----------------------------------------------------------------------------------------USERS------------------------*/
+.ba-users{
+	background-image: url(../images/Bg-3.png);
+	background-color: rgb(37, 18, 150);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	 justify-content: center;
+	text-align: center;	
+	display: flex;
+	align-items: center; 
+}
+
+.ba-users-headline{
+	font-size: 62px;
+	margin: 160px 0 75px 0;
+}
+
+.ba-users-neadline-text{
+	font-size: 22px;
+	margin: 0 0 60px 0;
+}
+
+.user-info{	
+	display: inline-block;
+	margin-right: 125px;
+}
+
+.user-info:nth-child(3n+3){
+	margin-right: 0;
+}
+
+.user-name{
+	font-size: 24px;
+	margin: 25px 0;
+}
+
+.user-text{
+	font-size: 16px;
+	margin: 25px 0;
+}
+
+.user-img:hover{
+	transform: scale(1.2);
+}
+
+.countdown-headline{
+	font-size: 62px;
+	margin: 120px 0 60px 0;
+}
+
+.countdown-time{
+	display: inline-block;
+	border: solid 1px #fff;
+	background-color: #460340;
+	width: 160px;
+	height: 160px;
+	padding: 0 auto;
+	margin-right: 20px;
+}
+
+.countdown-time:hover{
+	background-color: transparent;	
+}
+
+.countdown-time:nth-child(4){
+	margin-right: 0;
+}
+
+.countdown-numbers,
+.countdown-text{
+	display: block;
+	margin:0;
+	padding: 0;
+}
+
+.countdown-numbers{
+	font-size: 70px;
+}
+
+.countdown-text{
+	font-size: 18px;
+}
+
+.countdown-time-block{
+	margin-bottom: 115px;
+}
+
 
 /*------------------------------------------------------------------------------------------ANIMATIONS-------------------------*/
 
