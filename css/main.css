@@ -156,6 +156,7 @@ body{
 .ba-course_item{
 	margin: 0 0 90px 0;
 	position: relative;
+	display: flex;
 }
 
 .marker{
@@ -168,9 +169,8 @@ body{
 .ba-item-text{
 	color: #000;
 	font-size: 20px;
-	position: absolute;
 	width: 340px;
-	top:10px;
+	padding-top:5px; 
 }
 
 .ba-course_item:nth-child(1){
@@ -279,13 +279,16 @@ body{
 	margin: 120px 0 60px 0;
 }
 
+.countdown-time-block{
+	font-size: 0;
+}
+
 .countdown-time{
 	display: inline-block;
 	border: solid 1px #fff;
 	background-color: #460340;
 	width: 160px;
-	height: 160px;
-	padding: 0 auto;
+	height: 160px;	
 	margin-right: 20px;
 }
 
